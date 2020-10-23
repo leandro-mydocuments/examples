@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinculando rótulos nos elementos de entrada</title>
+</head>
+<body>
+    <form action="scripts/page1.php" method="get" target="_blank">
+        <fieldset>
+            <legend>Dados do usuário:</legend>
+            <label for="pname">Primeiro Nome:</label> <input type="text" name="pname" id="pname"><br>
+            <label for="uname">Segundo Nome:</label> <input type="text" name="uname" id="uname"><br>
+            Gênero: <input type="radio" name="sex" id="male"> <label for="male">Masculino</label>
+            <input type="radio" name="sex" id="female"> <label for="female">Feminino</label><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
