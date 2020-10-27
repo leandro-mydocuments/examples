@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definindo o rodapé da tabela</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #000000;    
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <caption>Tabela de funcionários</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pedro</td>
+                <td>32</td>
+                <td>Garçom</td>
+            </tr>
+            <tr>
+                <td>Lara</td>
+                <td>24</td>
+                <td>Vendedora</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Antônio</td>
+                <td>45</td>
+                <td>Empresário</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
