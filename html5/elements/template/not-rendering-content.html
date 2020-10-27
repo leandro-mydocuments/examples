@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não renderizando o conteúdo</title>
+    <style>
+        img {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button>Visualizar</button>
+    <template>
+        <img src="../../../img/black-action-camera.jpg" alt="Câmera de ação preta">
+    </template>
+    <script>
+        let button = document.querySelector("button");
+
+        button.onclick = () => {
+            let temp = document.querySelector("template");
+            let tempContent = temp.content.cloneNode(true);    
+
+            temp.style.display = "block";
+            document.body.appendChild(tempContent);
+        };
+    </script>
+</body>
+</html>
