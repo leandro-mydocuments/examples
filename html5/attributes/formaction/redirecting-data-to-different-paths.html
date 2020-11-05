@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando os dados para caminhos diferentes</title>
+</head>
+<body>
+    <form action="scripts/page1.php" method="get" target="_blank">
+        Primeiro Nome: <input type="text" name="pname"><br>
+        Segundo Nome: <input type="text" name="uname"><br>
+        <input type="submit" value="Enviar 1">
+        <input type="submit" value="Enviar 2" formaction="scripts/page2.php">
+    </form>
+</body>
+</html>
