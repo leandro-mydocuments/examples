@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibindo o conteúdo oculto</title>
+</head>
+<body>
+    <button>Exibir</button>
+    <p id="display" hidden="hidden">Este conteúdo estava oculto</p>
+    <script>
+        let button = document.querySelector("button");
+        button.addEventListener("click", function() {
+            document.querySelector("#display").hidden = false;
+        });
+    </script>
+</body>
+</html>
