@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não selecionando um elemento específico</title>
+    <style>
+        body :not(#none) {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Parágrafo 1</p>
+    <p>Parágrafo 2</p>
+    <p id="none">Parágrafo 3</p>
+    <p>Parágrafo 4</p>
+    <p>Parágrafo 5</p>
+</body>
+</html>
