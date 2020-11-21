@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibindo e ocultando o conteúdo</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        #content {
+            width: 400px;
+            height: 400px;
+            background: green;
+            text-align: center;
+            line-height: 400px;
+            color: #ffffff;
+            display: none;
+        }
+
+        #yes:checked ~ #content {
+            display: block;
+        }
+
+        #no:checked ~ #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Deseja visualizar o conteúdo?</p>
+    <label for="yes">Sim</label><input id="yes" name="option" type="radio">
+    <label for="no">Não</label><input id="no" name="option" type="radio" checked="checked">
+    <div id="content">
+        <h1>Conteúdo</h1>
+    </div>
+</body>
+</html>
