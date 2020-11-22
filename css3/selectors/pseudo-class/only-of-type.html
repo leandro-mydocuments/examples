@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando um elemento sem elementos irmãos de um tipo</title>
+    <style>
+        p:only-of-type {
+            background: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>Esse é um parágrafo.</p>
+        <p>Esse é um parágrafo.</p>
+        <p>Esse é um parágrafo.</p>
+    </section>
+    <p>Esse é um parágrafo.</p>
+</body>
+</html>
